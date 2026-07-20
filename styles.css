@@ -84,7 +84,8 @@ p { margin: 0 0 1em; }
   z-index: 0;
 }
 .hero-inner .hero-name,
-.hero-inner .hero-sub { color: rgba(255, 255, 255, 0.85); }
+.hero-inner .hero-sub,
+.hero-inner .hero-hook { color: rgba(255, 255, 255, 0.9); }
 .hero-inner h1,
 .hero-inner .hero-phrase,
 .hero-inner .cta-link { color: #fff; }
@@ -107,6 +108,12 @@ p { margin: 0 0 1em; }
   color: var(--ink-soft);
   font-size: 1.05rem;
   margin: 0 0 0.6em;
+}
+.hero-hook {
+  font-size: 1.15rem;
+  color: var(--ink);
+  max-width: 32ch;
+  margin: 0 auto 1em;
 }
 .hero-sub {
   color: var(--ink-soft);
@@ -168,6 +175,13 @@ p { margin: 0 0 1em; }
 .section-inner.narrow { max-width: 640px; }
 .section-inner.center { text-align: center; }
 
+#sobre-mi .section-inner {
+  display: block;
+}
+#sobre-mi .section-text {
+  max-width: 700px;
+}
+
 .kicker {
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -197,6 +211,12 @@ p { margin: 0 0 1em; }
   color: var(--terracotta-dark);
   margin: 0;
 }
+.price-save {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
 .price-badge {
   display: inline-block;
   margin-top: 0.6em;
@@ -205,6 +225,17 @@ p { margin: 0 0 1em; }
   padding: 0.25em 0.8em;
   font-size: 0.72rem;
   color: var(--ink-soft);
+}
+
+.faq-item {
+  margin: 0 0 1.6rem;
+}
+.faq-item:last-child { margin-bottom: 0; }
+.faq-question {
+  font-family: "Gloock", serif;
+  font-size: 1.15rem;
+  color: var(--terracotta-dark);
+  margin: 0 0 0.3em;
 }
 
 .testimonial {
