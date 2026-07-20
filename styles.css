@@ -62,11 +62,26 @@ p { margin: 0 0 1em; }
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 92vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
   background: linear-gradient(180deg, var(--cream) 0%, var(--cream-alt) 100%);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("images/hero-bg.webp");
+  background-size: cover;
+  background-position: center 30%;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(250, 243, 230, 0.5) 0%, rgba(243, 230, 210, 0.65) 100%);
+  z-index: 0;
 }
 .hero-inner {
   position: relative;
@@ -158,20 +173,32 @@ p { margin: 0 0 1em; }
 
 .body-text { color: var(--ink-soft); font-size: 1.05rem; }
 
-.price-line {
+.price-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.6em 0 1.3em;
+}
+.price-card {
+  border: 1.5px solid var(--terracotta);
+  border-radius: 16px;
+  padding: 1rem 1.3rem;
+}
+.price-amount {
   font-family: "Fraunces", serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--terracotta-dark);
-  margin: 0.4em 0 1em;
+  margin: 0;
 }
-.price-line span {
-  display: block;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.85rem;
+.price-badge {
+  display: inline-block;
+  margin-top: 0.6em;
+  border: 1px solid var(--terracotta);
+  border-radius: 999px;
+  padding: 0.25em 0.8em;
+  font-size: 0.72rem;
   color: var(--ink-soft);
-  margin-top: 0.2em;
 }
 
 .testimonial {
@@ -214,12 +241,31 @@ p { margin: 0 0 1em; }
   display: block;
 }
 
+.photo-mosaic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.mosaic-featured {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+.mosaic-small {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
 @media (min-width: 780px) {
   .section-inner:not(.narrow) {
     grid-template-columns: 1fr 1fr;
   }
-  .section-inner.reverse .photo-placeholder,
-  .section-inner.reverse .section-photo { order: 2; }
+  .section-inner.reverse .section-text { order: 2; }
 }
 
 /* ---------- CONTACT ---------- */
