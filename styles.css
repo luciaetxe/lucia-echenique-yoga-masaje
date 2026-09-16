@@ -162,12 +162,14 @@ p { margin: 0 0 1em; }
 }
 
 .kicker {
+  font-family: "DM Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.78rem;
+  line-height: 1.6;
   color: var(--blue);
   font-weight: 500;
-  margin-bottom: 0.8em;
+  margin: 0 0 0.8em;
 }
 
 .body-text { color: var(--ink-soft); font-size: 1.05rem; }
@@ -214,7 +216,7 @@ p { margin: 0 0 1em; }
   font-size: 1.15rem;
   line-height: 1.55;
   color: var(--ink);
-  font-variation-settings: "opsz" 40, "SOFT" 30, "WONK" 0;
+  font-variation-settings: "opsz" 40;
   margin: 0 0 0.7em;
 }
 .testimonial cite {
@@ -284,5 +286,5 @@ p { margin: 0 0 1em; }
   font-size: 1rem;
   color: var(--terracotta-dark);
   margin: 0 0 0.8em;
-  font-variation-settings: "opsz" 40, "SOFT" 30, "WONK" 0;
+  font-variation-settings: "opsz" 40;
 }
