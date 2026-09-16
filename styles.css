@@ -67,7 +67,7 @@ p { margin: 0 0 1em; }
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
-  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-alt) 100%);
+  background: #8c6f5b;
 }
 .hero-bg {
   position: absolute;
